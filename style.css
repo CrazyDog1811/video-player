@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(135deg, #3d22b4, #c92088, #0cf31f);
+    height: 100vh;
+}
+
+.player {
+    width: max-content;
+    height: 338px;
+    overflow: hidden;
+    margin: 10%;
+}
+
+.player:hover .player__controls {
+    top: -40px;
+}
+
+.player__video {
+    max-width: 600px;
+}
+
+.player__controls {
+    position: relative;
+    top: -15px;
+    transition: 0.5s;
+}
+
+.progress {
+    display: flex;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.progress:hover {
+    cursor: pointer;
+}
+
+.progress__filled {
+    flex-basis: 10%;
+    height: 10px;
+    background-color: #ffd700;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
